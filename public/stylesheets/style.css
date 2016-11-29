@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.title{
+  font-size: 4em;
+  font-family: Gza;
+}
+
+.quote-box{
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: -10px 10px 20px gray;
+  margin: 0px, auto;
+  padding: 20px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.quote {
+}
+
+.author {
+  display: block;
+}
+
+
