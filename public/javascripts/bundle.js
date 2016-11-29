@@ -21579,7 +21579,7 @@
 	        "div",
 	        { className: "quote-box" },
 	        _react2.default.createElement(
-	          "h3",
+	          "div",
 	          { className: "title" },
 	          "Classic Quotes"
 	        ),
@@ -21595,11 +21595,7 @@
 	          { className: "author" },
 	          "Albert Einstein"
 	        ),
-	        _react2.default.createElement(
-	          "button",
-	          { id: "quote-btn", className: "btn btn-default" },
-	          "Next Quote"
-	        ),
+	        _react2.default.createElement("img", { src: "img/switch.png", id: "quote-btn", className: "switch" }),
 	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000"
 	      );
 	    }

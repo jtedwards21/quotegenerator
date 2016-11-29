@@ -13,7 +13,7 @@ export default class Generator extends React.Component {
 	    <div className="title">Classic Quotes</div>
 	　　　　<span className="quote">Insanity: doing the same thing over and over again and expecting different results.</span>
     　　　　　　　　<span className="author">Albert Einstein</span>
-	    <button id="quote-btn" className="btn btn-default">Next Quote</button>
+	    <img src="img/switch.png" id="quote-btn" className="switch" />
   　　　　　　　　</div>
     );
   }
