@@ -21595,7 +21595,11 @@
 	          { className: "author" },
 	          "Albert Einstein"
 	        ),
-	        _react2.default.createElement("img", { src: "img/switch.png", id: "quote-btn", className: "switch" }),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "img-container" },
+	          _react2.default.createElement("img", { src: "img/switch.png", id: "quote-btn", className: "switch" })
+	        ),
 	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000"
 	      );
 	    }

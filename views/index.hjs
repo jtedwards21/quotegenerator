@@ -6,8 +6,6 @@
   </head>
   <body>
     <div id="content">{{{markup}}}</div>
-　　　　<div class="wood-box"></div>
-    <div class="back-box"></div>
 
     <script src="javascripts/bundle.js"></script>
   </body>
