@@ -5,21 +5,30 @@
   src: url("Jambo.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Sugar;
+  font-style: normal;
+  font-weight: normal;
+  src: url("Sugar.ttf") format("truetype");
+}
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
+  background-image: url(../img/bg.jpg);
 }
 
 #content {
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 120px;
   
 }
 
 .title{
-  font-size: 1em;
+  font-size: 2.5em;
   font-family: Jambo;
   font-weight: bold;
+  color: #52486F;
   
 }
 
@@ -32,10 +41,10 @@ body {
   margin-right: auto;
   text-align: center;
   z-index: 4;
-  width: 60%;
-  padding-left: auto;
-  padding-right: auto;
-  background-color: red;
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #A3906F;
   padding-top: 20px;
 }
 
@@ -45,10 +54,18 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   display: block;
+  font-family: Sugar;
+  font-weight: bold;
+  color: #52486F;
+  font-size: 1.5em;
 }
 
 .author {
   display: block;
+　 font-family: Jambo;
+  font-weight: bold;
+  color: #52486F;
+  font-size: 1.5em;
 }
 
 .switch {
