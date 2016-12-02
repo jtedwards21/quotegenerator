@@ -16,12 +16,12 @@ export default class Generator extends React.Component {
     };
     this.changeQuote.bind(this);
   }
-  getRand(){
+  getRand(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   changeQuote(){
     var keys = Object.keys(this.quotes);
-    var rand = getRand(0, keys.length - 1);
+    var rand = this.getRand(0, keys.length - 1);
     this.setState({quote: this.quotes[keys[rand]]});
     this.setState({author: keys[rand]});
   }
@@ -34,7 +34,7 @@ export default class Generator extends React.Component {
 	    <div className="title">Classic Quotes</div>
 	　　　　<span className="quote">{this.state.quote}</span>
     　　　　　　　　<span className="author">{this.state.author}</span>
-	    <div className="img-container"><img onClick={this.changeQuote} src="img/switch.png" id="quote-btn" className="switch" /></div>
+	    <div className="img-container"><img onClick={this.changeQuote.bind(this)} src="img/switch.png" id="quote-btn" className="switch" /></div>
   　　　　　　　　</div>
     );
   }

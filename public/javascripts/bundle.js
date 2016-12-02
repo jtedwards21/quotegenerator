@@ -21563,16 +21563,44 @@
 	var Generator = function (_React$Component) {
 	  _inherits(Generator, _React$Component);
 
-	  function Generator() {
+	  function Generator(props) {
 	    _classCallCheck(this, Generator);
 
-	    var _this = _possibleConstructorReturn(this, (Generator.__proto__ || Object.getPrototypeOf(Generator)).call(this));
+	    var _this = _possibleConstructorReturn(this, (Generator.__proto__ || Object.getPrototypeOf(Generator)).call(this, props));
 
-	    _this.state = {};
+	    _this.quotes = {
+	      "Albert Einstein": "Insanity: doing the same thing over and over again and expecting different results.",
+	      "Jimmy Dean": "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.",
+	      "Audrey Hepburn": "Nothing is impossible, the word itself says 'I'm possible'!"
+	    };
+
+	    _this.state = {
+	      author: "",
+	      quote: ""
+	    };
+	    _this.changeQuote.bind(_this);
 	    return _this;
 	  }
 
 	  _createClass(Generator, [{
+	    key: "getRand",
+	    value: function getRand(min, max) {
+	      return Math.floor(Math.random() * (max - min + 1)) + min;
+	    }
+	  }, {
+	    key: "changeQuote",
+	    value: function changeQuote() {
+	      var keys = Object.keys(this.quotes);
+	      var rand = this.getRand(0, keys.length - 1);
+	      this.setState({ quote: this.quotes[keys[rand]] });
+	      this.setState({ author: keys[rand] });
+	    }
+	  }, {
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      this.changeQuote();
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -21587,18 +21615,18 @@
 	        _react2.default.createElement(
 	          "span",
 	          { className: "quote" },
-	          "Insanity: doing the same thing over and over again and expecting different results."
+	          this.state.quote
 	        ),
 	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000",
 	        _react2.default.createElement(
 	          "span",
 	          { className: "author" },
-	          "Albert Einstein"
+	          this.state.author
 	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "img-container" },
-	          _react2.default.createElement("img", { src: "img/switch.png", id: "quote-btn", className: "switch" })
+	          _react2.default.createElement("img", { onClick: this.changeQuote.bind(this), src: "img/switch.png", id: "quote-btn", className: "switch" })
 	        ),
 	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000"
 	      );

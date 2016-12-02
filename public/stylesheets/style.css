@@ -56,5 +56,6 @@ body {
   padding-left: auto;
   padding-right: auto;
   float: none;
+  cursor: pointer;
 }
 
