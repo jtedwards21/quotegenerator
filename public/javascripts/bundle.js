@@ -21603,6 +21603,8 @@
 	  }, {
 	    key: "render",
 	    value: function render() {
+	      var uriComp = encodeURIComponent('"' + this.state.quote + '" ' + this.state.author);
+	      var href = 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + uriComp;
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "quote-box" },
@@ -21622,6 +21624,16 @@
 	          "span",
 	          { className: "author" },
 	          this.state.author
+	        ),
+	        "\u3000\u3000\u3000\u3000",
+	        _react2.default.createElement(
+	          "a",
+	          { href: href },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "twitter-btn" },
+	            _react2.default.createElement("img", { className: "twitter", src: "img/twitter.png" })
+	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",

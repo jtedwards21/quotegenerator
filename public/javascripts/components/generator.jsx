@@ -29,11 +29,14 @@ export default class Generator extends React.Component {
     this.changeQuote();
   }
   render() {
+    var uriComp = encodeURIComponent('"' + this.state.quote + '" ' + this.state.author);
+    var href = 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + uriComp;
     return (
 	　　<div className="quote-box">
 	    <div className="title">Classic Quotes</div>
 	　　　　<span className="quote">{this.state.quote}</span>
     　　　　　　　　<span className="author">{this.state.author}</span>
+	　　　　<a href={href}><div className="twitter-btn"><img className="twitter" src="img/twitter.png" /></div></a>
 	    <div className="img-container"><img onClick={this.changeQuote.bind(this)} src="img/switch.png" id="quote-btn" className="switch" /></div>
   　　　　　　　　</div>
     );

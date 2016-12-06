@@ -48,7 +48,9 @@ body {
   padding-top: 20px;
 }
 
-
+.twitter {
+  width: 100px; 
+}
 
 .quote {
   margin-top: 20px;
