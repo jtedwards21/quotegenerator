@@ -21640,6 +21640,25 @@
 	          { className: "img-container" },
 	          _react2.default.createElement("img", { onClick: this.changeQuote.bind(this), src: "img/switch.png", id: "quote-btn", className: "switch" })
 	        ),
+	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000",
+	        _react2.default.createElement(
+	          "div",
+	          { "class": "container" },
+	          _react2.default.createElement(
+	            "div",
+	            { "class": "row" },
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://github.com/jtedwards21/betterPomodoro", "class": "col-md-4 col-md-offset-4 text-center", id: "github-container" },
+	              _react2.default.createElement("img", { id: "github-img", src: "/img/github.png" }),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                "Check out the code on github"
+	              )
+	            )
+	          )
+	        ),
 	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000"
 	      );
 	    }

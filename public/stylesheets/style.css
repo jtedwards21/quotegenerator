@@ -12,6 +12,25 @@
   src: url("Sugar.ttf") format("truetype");
 }
 
+
+#github-img{
+  width: 50px;
+}
+
+a {
+  color: #52486F;
+}
+
+#github-container {
+  width: 300px;
+}
+
+#github-container p {
+  font-family: Denominator;
+  font-size: 1.5em;
+}
+
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
