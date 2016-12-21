@@ -11,32 +11,23 @@
   font-weight: normal;
   src: url("Sugar.ttf") format("truetype");
 }
-
-#link-container {
-
-  position: fixed;
-  top: 95vh;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #333;
 }
 
-#github-img{
-  width: 50px;
-}
-
-a {
-  color: #52486F;
-}
-
-#github-container {
-  width: 300px;
-  text-align: center;
+#github-container{
 }
 
 #github-container p {
-  font-family: Jambo;
-  font-size: 1.5em;
-  color: black;
+  font-family: Sugar;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
 }
-
 
 
 body {
