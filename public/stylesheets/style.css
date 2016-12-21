@@ -12,6 +12,11 @@
   src: url("Sugar.ttf") format("truetype");
 }
 
+#link-container {
+
+  position: fixed;
+  top: 95vh;
+}
 
 #github-img{
   width: 50px;
@@ -23,12 +28,15 @@ a {
 
 #github-container {
   width: 300px;
+  text-align: center;
 }
 
 #github-container p {
-  font-family: Denominator;
+  font-family: Jambo;
   font-size: 1.5em;
+  color: black;
 }
+
 
 
 body {

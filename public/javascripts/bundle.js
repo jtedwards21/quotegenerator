@@ -21640,22 +21640,7 @@
 	          { className: "img-container" },
 	          _react2.default.createElement("img", { onClick: this.changeQuote.bind(this), src: "img/switch.png", id: "quote-btn", className: "switch" })
 	        ),
-	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000",
-	        _react2.default.createElement(
-	          "div",
-	          null,
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://github.com/jtedwards21/quotegenerator", className: "", id: "github-container" },
-	            _react2.default.createElement("img", { id: "github-img", src: "/img/github.png" }),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Check out the code on github"
-	            )
-	          )
-	        ),
-	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000"
+	        "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000 \u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000"
 	      );
 	    }
 	  }]);

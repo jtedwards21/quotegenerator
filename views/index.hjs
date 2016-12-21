@@ -10,6 +10,6 @@
     <div id="content">{{{markup}}}</div>
 
     <script src="javascripts/bundle.js"></script>
-　　　　
+　　　　<div id="link-container"style="width:100%;"><a href="https://github.com/jtedwards21/calculator" id="github-container"><p>Check out the code on github</p></a></div>
   </body>
 </html>

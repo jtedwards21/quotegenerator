@@ -38,7 +38,7 @@ export default class Generator extends React.Component {
     　　　　　　　　<span className="author">{this.state.author}</span>
 	　　　　<a href={href}><div className="twitter-btn"><img className="twitter" src="img/twitter.png" /></div></a>
 	    <div className="img-container"><img onClick={this.changeQuote.bind(this)} src="img/switch.png" id="quote-btn" className="switch" /></div>
-　　　　　　　　　　　<div><a href="https://github.com/jtedwards21/quotegenerator" className="" id="github-container"><img id="github-img" src="/img/github.png"/><p>Check out the code on github</p></a></div>
+　　　　　　　　　　
   　　　　　　　　</div>
     );
   }
